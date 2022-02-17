@@ -1,3 +1,23 @@
 export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>
+  return (
+    <>
+      <h1 className="title">{title}</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/cloudflare-naive">Cloudflare Pages - Naive</a>
+          </li>
+          <li>
+            <a href="/cloudflare-script">Cloudflare Pages - Next.js Script</a>
+          </li>
+          <li>
+            <a href="/production-naive">Production - Naive</a>
+          </li>
+          <li>
+            <a href="/production-script">Production - Next.js Script</a>
+          </li>
+        </ul>
+      </nav>
+    </>
+  )
 }

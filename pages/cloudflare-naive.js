@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import { getScript } from 'utils/getScript'
 
 export default function Home() {
   return (
@@ -13,12 +14,20 @@ export default function Home() {
       <main>
         <Header title="Welcome to my app!" />
         <p className="description">
-          Select one of the options above to test the performance of Beacon
-          under different environments.
+          This page renders Beacon using a div with `dangerouslySetInnerHTML`
+          from Cloudflare Pages.
         </p>
       </main>
 
       <Footer />
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `<script>${getScript(
+            'https://beacon2.pages.dev/loader.js'
+          )}</script>`,
+        }}
+      ></div>
     </div>
   )
 }
