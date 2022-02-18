@@ -16,6 +16,11 @@ export default function Header({ title }) {
           <li>
             <a href="/production-script">Production - Next.js Script</a>
           </li>
+          <li>
+            <a href="/production-naive-preconnect">
+              Production - Naive with Preconnect Tags
+            </a>
+          </li>
         </ul>
       </nav>
     </>
