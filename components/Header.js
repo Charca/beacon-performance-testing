@@ -11,6 +11,11 @@ export default function Header({ title }) {
             <a href="/cloudflare-script">Cloudflare Pages - Next.js Script</a>
           </li>
           <li>
+            <a href="/cloudflare-naive-critical">
+              Cloudflare Pages - Naive Critical
+            </a>
+          </li>
+          <li>
             <a href="/production-naive">Production - Naive</a>
           </li>
           <li>

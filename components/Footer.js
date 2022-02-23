@@ -5,7 +5,13 @@ export default function Footer() {
     <>
       <footer className={styles.footer}>
         Made with{' '}
-        <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} />{' '}
+        <img
+          src="/netliheart.svg"
+          alt="Netlify Logo"
+          width={20}
+          height={16}
+          className={styles.logo}
+        />{' '}
         for you
       </footer>
     </>
