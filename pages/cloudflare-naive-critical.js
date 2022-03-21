@@ -24,7 +24,7 @@ export default function Home() {
       <div
         dangerouslySetInnerHTML={{
           __html: `<script>${getScript(
-            'https://bembed-337-optimize-critical.beacon2.pages.dev/loader.js'
+            'https://perf-test.beacon2.pages.dev/loader.js'
           )}</script>`,
         }}
       ></div>
